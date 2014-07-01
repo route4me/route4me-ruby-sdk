@@ -1,0 +1,4 @@
+/route4me-*.gem
+/Gemfile.lock
+.rvmrc
+Gemfile.lock

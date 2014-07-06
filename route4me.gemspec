@@ -10,7 +10,6 @@ spec = Gem::Specification.new do |s|
   s.author = 'Igor Skrynkovskyy'
   s.email = 'igor@route4me.com'
   s.homepage = 'http://route4me.com'
-  s.license = 'MIT'
 
   s.add_dependency 'rest-client', '~> 1.4'
   s.add_dependency 'mime-types', '~> 1.25'

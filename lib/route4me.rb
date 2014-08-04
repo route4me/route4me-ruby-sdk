@@ -85,7 +85,7 @@ module Route4me
       handle_error(e)
     end
 
-    parse(response)
+    Util.symbolize_names(parse(response))
   end
 
   def self.execute(attrs)

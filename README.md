@@ -68,5 +68,5 @@ Please see [examples](examples/) folder for more examples, which are to demonstr
 ## Tests
 
 ```
-rake test
+rspec spec
 ```

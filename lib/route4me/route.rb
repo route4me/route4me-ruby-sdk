@@ -5,12 +5,10 @@ module Route4me
     end
 
     def self.get(params={})
-      get = Util.extract(params, %i(
-        route_id directions route_path_output
-        device_tracking_history limit offset
-        original
-      ))
-
+      get = Util.extract(params, [
+        :route_id, :directions, :route_path_output, :device_tracking_history,
+        :limit, :offset, :original
+      ])
       Route4me.request(:get, self.url, get: get)
     end
 

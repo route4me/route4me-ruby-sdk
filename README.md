@@ -61,6 +61,10 @@ problem = Route4me::OptimizationProblem.optimize(
 puts problem
 ```
 
+### More examples
+
+Please see examples folder for more examples, which are to demonstrate examples of Route & GPS calls and some optimization problems (single driver, round trip, multiple driver, time window, re-optimization).
+
 ## Tests
 
 ```

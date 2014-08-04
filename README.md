@@ -70,5 +70,5 @@ Please see [examples](examples/) folder for more examples, which are to demonstr
 ## Tests
 
 ```
-rspec spec
+rspec
 ```

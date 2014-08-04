@@ -12,7 +12,7 @@ module Route4me
       ))
 
       response = Route4me.request(:get, self.url, get: get)
-      response['status']
+      response[:status]
     end
   end
 end

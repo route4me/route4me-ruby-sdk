@@ -10,14 +10,14 @@ module Route4me
         device_tracking_history limit offset
         original
       ))
+
       Route4me.request(:get, self.url, get: get)
     end
 
     def self.delete(params={})
       get = Util.extract(params, [:route_id])
       status = Route4me.request(:delete, self.url, get: get)
-
-      return status['deleted']
+      status[:deleted]
     end
   end
 end

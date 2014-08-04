@@ -10,10 +10,10 @@ module Route4me
       ))
 
       optimization = Route4me.request(:get, self.url, get: get)
-      if (optimization['optimizations']).nil?
+      if (optimization[:optimizations]).nil?
         optimization
       else
-        optimization['optimizations']
+        optimization[:optimizations]
       end
     end
 

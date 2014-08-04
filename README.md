@@ -38,7 +38,7 @@ puts problem
 
 ### Multiple Depot Multiple driver route optimization
 
-```javascript
+```ruby
 require 'route4me'
 require './addresses'
 

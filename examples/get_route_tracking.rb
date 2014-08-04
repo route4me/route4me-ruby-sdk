@@ -6,4 +6,4 @@ route = Route4me::Route.get({
   :device_tracking_history => true
 })
 
-puts route['tracking_history']
+puts route[:tracking_history]

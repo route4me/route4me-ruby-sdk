@@ -17,21 +17,21 @@ describe Route4me::OptimizationProblem do
     )
 
     expect(problem).not_to be_nil
-    expect(problem['optimization_problem_id']).to_not be_empty
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['state']).to eq(4)
+    expect(problem[:optimization_problem_id]).to_not be_empty
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:state]).to eq(4)
 
-    parameters = problem['parameters']
-    expect(parameters['algorithm_type']).to eq("1")
-    expect(parameters['rt']).to eq(false)
-    expect(parameters['device_type']).to eq('web')
-    expect(parameters['distance_unit']).to eq('mi')
-    expect(parameters['optimize']).to eq('Distance')
-    expect(parameters['travel_mode']).to eq('Driving')
-    expect(parameters['route_max_duration']).to eq(86400)
-    expect(parameters['vehicle_capacity']).to eq("1")
-    expect(parameters['vehicle_max_distance_mi']).to eq("10000")
+    parameters = problem[:parameters]
+    expect(parameters[:algorithm_type]).to eq('1')
+    expect(parameters[:rt]).to eq(false)
+    expect(parameters[:device_type]).to eq('web')
+    expect(parameters[:distance_unit]).to eq('mi')
+    expect(parameters[:optimize]).to eq('Distance')
+    expect(parameters[:travel_mode]).to eq('Driving')
+    expect(parameters[:route_max_duration]).to eq(86400)
+    expect(parameters[:vehicle_capacity]).to eq('1')
+    expect(parameters[:vehicle_max_distance_mi]).to eq('10000')
   end
 
   it "Should create simple driver optimization with round trip" do
@@ -51,21 +51,21 @@ describe Route4me::OptimizationProblem do
     )
 
     expect(problem).not_to be_nil
-    expect(problem['optimization_problem_id']).to_not be_empty
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['state']).to eq(4)
+    expect(problem[:optimization_problem_id]).to_not be_empty
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:state]).to eq(4)
 
-    parameters = problem['parameters']
-    expect(parameters['algorithm_type']).to eq("1")
-    expect(parameters['rt']).to eq(true)
-    expect(parameters['device_type']).to eq('web')
-    expect(parameters['distance_unit']).to eq('mi')
-    expect(parameters['optimize']).to eq('Distance')
-    expect(parameters['travel_mode']).to eq('Driving')
-    expect(parameters['route_max_duration']).to eq(86400)
-    expect(parameters['vehicle_capacity']).to eq("1")
-    expect(parameters['vehicle_max_distance_mi']).to eq("10000")
+    parameters = problem[:parameters]
+    expect(parameters[:algorithm_type]).to eq('1')
+    expect(parameters[:rt]).to eq(true)
+    expect(parameters[:device_type]).to eq('web')
+    expect(parameters[:distance_unit]).to eq('mi')
+    expect(parameters[:optimize]).to eq('Distance')
+    expect(parameters[:travel_mode]).to eq('Driving')
+    expect(parameters[:route_max_duration]).to eq(86400)
+    expect(parameters[:vehicle_capacity]).to eq('1')
+    expect(parameters[:vehicle_max_distance_mi]).to eq('10000')
   end
 
   it "Should create multiple driver optimization" do
@@ -86,20 +86,20 @@ describe Route4me::OptimizationProblem do
     )
 
     expect(problem).not_to be_nil
-    expect(problem['optimization_problem_id']).to_not be_empty
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['state']).to eq(4)
+    expect(problem[:optimization_problem_id]).to_not be_empty
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:state]).to eq(4)
 
-    parameters = problem['parameters']
-    expect(parameters['algorithm_type']).to eq("3")
-    expect(parameters['device_type']).to eq('web')
-    expect(parameters['distance_unit']).to eq('mi')
-    expect(parameters['optimize']).to eq('Distance')
-    expect(parameters['travel_mode']).to eq('Driving')
-    expect(parameters['route_max_duration']).to eq(86400)
-    expect(parameters['vehicle_capacity']).to eq('99')
-    expect(parameters['vehicle_max_distance_mi']).to eq('10000')
+    parameters = problem[:parameters]
+    expect(parameters[:algorithm_type]).to eq('3')
+    expect(parameters[:device_type]).to eq('web')
+    expect(parameters[:distance_unit]).to eq('mi')
+    expect(parameters[:optimize]).to eq('Distance')
+    expect(parameters[:travel_mode]).to eq('Driving')
+    expect(parameters[:route_max_duration]).to eq(86400)
+    expect(parameters[:vehicle_capacity]).to eq('99')
+    expect(parameters[:vehicle_max_distance_mi]).to eq('10000')
   end
 
   it "Should create single driver optimization with time window" do
@@ -119,20 +119,20 @@ describe Route4me::OptimizationProblem do
     )
 
     expect(problem).not_to be_nil
-    expect(problem['optimization_problem_id']).to_not be_empty
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['state']).to eq(4)
+    expect(problem[:optimization_problem_id]).to_not be_empty
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:state]).to eq(4)
 
-    parameters = problem['parameters']
-    expect(parameters['algorithm_type']).to eq("4")
-    expect(parameters['device_type']).to eq('web')
-    expect(parameters['distance_unit']).to eq('mi')
-    expect(parameters['optimize']).to eq('Distance')
-    expect(parameters['travel_mode']).to eq('Driving')
-    expect(parameters['route_max_duration']).to eq(86400)
-    expect(parameters['vehicle_capacity']).to eq('99')
-    expect(parameters['vehicle_max_distance_mi']).to eq('10000')
+    parameters = problem[:parameters]
+    expect(parameters[:algorithm_type]).to eq("4")
+    expect(parameters[:device_type]).to eq('web')
+    expect(parameters[:distance_unit]).to eq('mi')
+    expect(parameters[:optimize]).to eq('Distance')
+    expect(parameters[:travel_mode]).to eq('Driving')
+    expect(parameters[:route_max_duration]).to eq(86400)
+    expect(parameters[:vehicle_capacity]).to eq('99')
+    expect(parameters[:vehicle_max_distance_mi]).to eq('10000')
   end
 
   it 'Should create route without optimization' do
@@ -145,10 +145,10 @@ describe Route4me::OptimizationProblem do
     )
 
     expect(problem).not_to be_nil
-    expect(problem['optimization_problem_id']).to_not be_empty
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['parameters']['disable_optimization']).to eq(true)
+    expect(problem[:optimization_problem_id]).to_not be_empty
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:parameters][:disable_optimization]).to eq(true)
   end
 
   it 'Should return data about optimization' do
@@ -160,16 +160,15 @@ describe Route4me::OptimizationProblem do
       }
     )
 
-    problem_id = problem["optimization_problem_id"]
-
+    problem_id = problem[:optimization_problem_id]
     problem = Route4me::OptimizationProblem.get(
       :optimization_problem_id => problem_id
     )
 
     expect(problem).not_to be_nil
-    expect(problem['addresses'].length).to eq(5)
-    expect(problem['parameters']).to_not be_empty
-    expect(problem['optimization_problem_id']).to eq(problem_id)
+    expect(problem[:addresses].length).to eq(5)
+    expect(problem[:parameters]).to_not be_empty
+    expect(problem[:optimization_problem_id]).to eq(problem_id)
   end
 
   it 'Should return data about several optimization object' do

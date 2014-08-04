@@ -7,16 +7,16 @@ describe Route4me::Route do
       :addresses  => addresses
     )
 
-    @route_id = problem['routes'][0]['route_id']
+    @route_id = problem[:routes][0][:route_id]
   end
 
   it 'should return route by id' do
     route = Route4me::Route.get(:route_id => @route_id)
 
     expect(route).not_to be_nil
-    expect(route['route_id']).to eq(@route_id)
-    expect(route['tracking_history']).to be_nil
-    expect(route['optimization_problem_id']).to_not be_empty
+    expect(route[:route_id]).to eq(@route_id)
+    expect(route[:tracking_history]).to be_nil
+    expect(route[:optimization_problem_id]).to_not be_empty
   end
 
   it 'should return route by id with tracking' do
@@ -40,11 +40,11 @@ describe Route4me::Route do
     )
 
     expect(route).not_to be_nil
-    expect(route['route_id']).to eq(@route_id)
-    expect(route['optimization_problem_id']).to_not be_empty
-    expect(route['tracking_history']).to_not be_nil
-    expect(route['tracking_history']).to be_kind_of(Array)
-    expect(route['tracking_history'].length).to eq(2)
+    expect(route[:route_id]).to eq(@route_id)
+    expect(route[:optimization_problem_id]).to_not be_empty
+    expect(route[:tracking_history]).to_not be_nil
+    expect(route[:tracking_history]).to be_kind_of(Array)
+    expect(route[:tracking_history].length).to eq(2)
   end
 
   it 'should returns 5 routes' do

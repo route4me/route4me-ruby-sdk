@@ -1,3 +1,5 @@
+require File.expand_path('../../spec_helper', __FILE__)
+
 describe Route4me::Track do
   it "Should track device" do
     status = Route4me::Track.set(

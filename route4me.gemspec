@@ -15,9 +15,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency 'mime-types', '~> 1.25'
   s.add_dependency 'json', '~> 1.8.1'
 
-  s.add_development_dependency 'test-unit'
   s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rake'
 
   s.files = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- test/*`.split("\n")

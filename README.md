@@ -9,6 +9,8 @@ Access Route4Me's logistics-as-a-service API using our Ruby SDK
 gem install --source https://github.com/route4me/route4me-ruby-sdk route4me
 # or
 gem install route4me
+# or add in Gemfile
+gem 'route4me', '~> 1.1.0'
 ```
 
 ## Usage example

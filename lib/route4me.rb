@@ -1,5 +1,3 @@
-# Stripe Ruby bindings
-# API spec at https://stripe.com/docs/api
 require 'cgi'
 require 'set'
 require 'openssl'

@@ -1,3 +1,6 @@
+[![codebeat badge](https://codebeat.co/badges/c0e56a93-f61a-4c73-95ba-155915f63324)](https://codebeat.co/projects/github-com-route4me-route4me-ruby-sdk)
+
+
 Access Route4Me's logistics-as-a-service API using our Ruby SDK
 -----------------
 

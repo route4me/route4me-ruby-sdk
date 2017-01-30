@@ -45,7 +45,7 @@ module Route4me
     params.map{ |k,v| "#{k}=#{Util.url_encode(v)}" }.join('&')
   end
 
-  # codebeat:disable[LOC]
+  # codebeat:disable[LOC, ABC]
   def self.request(method, url, opts)
     unless @api_key
       raise ArgumentError.new('No API key provided.')
@@ -86,7 +86,7 @@ module Route4me
 
     Util.symbolize_names(parse(response))
   end
-  # codebeat:enable[LOC]
+  # codebeat:enable[LOC, ABC]
 
   def self.execute(attrs)
     RestClient::Request.execute(attrs)

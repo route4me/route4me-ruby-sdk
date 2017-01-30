@@ -10,10 +10,10 @@ problem = Route4me::OptimizationProblem.optimize(
     :device_type             => Route4me::DeviceType::WEB,
     :optimize                => Route4me::OptimizationType::DISTANCE,
     :travel_mode             => Route4me::TravelMode::DRIVING,
-    :route_max_duration      => 86400,
-    :vehicle_capacity        => 50,
-    :vehicle_max_distance_mi => 10000,
-    :parts                   => 50
+    :route_max_duration      => 85700,
+    :vehicle_capacity        => 48,
+    :vehicle_max_distance_mi => 9999,
+    :parts                   => 48
   }
 )
 

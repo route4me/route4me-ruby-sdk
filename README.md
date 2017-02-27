@@ -1,6 +1,8 @@
 [![codebeat badge](https://codebeat.co/badges/c0e56a93-f61a-4c73-95ba-155915f63324)](https://codebeat.co/projects/github-com-route4me-route4me-ruby-sdk)
 [![Build Status](https://travis-ci.org/route4me/route4me-ruby-sdk.svg?branch=master)](https://travis-ci.org/route4me/route4me-ruby-sdk)
-
+[![Build Status](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/route4me/route4me-ruby-sdk/?branch=master)
 
 Access Route4Me's logistics-as-a-service API using our Ruby SDK
 -----------------

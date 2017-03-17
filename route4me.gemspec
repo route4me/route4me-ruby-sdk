@@ -12,7 +12,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = 'http://route4me.com'
 
   s.add_dependency 'rest-client', '~> 1.4'
-  s.add_dependency 'mime-types', '~> 1.25'
+  s.add_dependency 'mime-types', '~> 3.1'
   s.add_dependency 'json', '~> 1.8.1'
 
   s.add_development_dependency 'rspec'
